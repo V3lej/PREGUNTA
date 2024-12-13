@@ -43,22 +43,28 @@ body, html {
     position: absolute;
 }
 
+/* Estilos del botón verde */
 .green {
     background-color: green;
     color: white;
-}
-
-.red {
-    background-color: red;
-    color: white;
-}
-
-.red:hover {
-    background-color: darkred;
+    top: 50%;  /* Centrado en la mitad del marco */
+    left: 30%;  /* Ajuste para separarlo del botón rojo */
 }
 
 .green:hover {
     background-color: darkgreen;
+}
+
+/* Estilos del botón rojo */
+.red {
+    background-color: red;
+    color: white;
+    top: 60%;  /* No se superpone con el verde */
+    left: 50%;  /* Ajuste de posición para que no esté encima del verde */
+}
+
+.red:hover {
+    background-color: darkred;
 }
 
 /* Estilo para el cuadro de mensaje */
